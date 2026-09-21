@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Домашнее задание — Flexbox</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================= -->
+  <!-- КАРТИНКА 1 (папка Flexbox): "Offline SEO"      -->
+  <!-- Картинка слева, текст справа                    -->
+  <!-- ============================================= -->
+  <section class="block block--seo">
+    <img class="block__image" src="illustration-services.svg" alt="Иллюстрация: человек у указателей">
+
+    <div class="block__content">
+      <h1>Offline SEO</h1>
+      <p>
+        Aenean commodo ligula eget dolor. Sed hendrerit. Vestibulum ante ipsum
+        primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+        In ac dui quis mi consectetuer lacinia.
+      </p>
+      <ul class="dot-list">
+        <li>First class flights</li>
+        <li>5 Star accommodations</li>
+        <li>Inclusive packages</li>
+        <li>Latest model vehicles</li>
+      </ul>
+      <button class="btn">
+        Check our work
+        <i data-lucide="chevron-right"></i>
+      </button>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- КАРТИНКА 2 (папка Flexbox): "Boosts your website traffic" -->
+  <!-- Текст слева, картинка справа                    -->
+  <!-- ============================================= -->
+  <section class="block block--traffic">
+    <div class="block__content">
+      <span class="eyebrow">Digital marketing</span>
+      <h1>Boosts your website traffic</h1>
+      <p>
+        Etiam sollicitudin, ipsum eu pulvinar rutrum, tellus ipsum
+        laoreet sapien, quis venenatis ante odio sit amet eros.
+      </p>
+      <button class="btn btn--dark">Try for free</button>
+    </div>
+
+    <img class="block__image" src="illustration-marketing-market.svg" alt="Иллюстрация: рост трафика">
+  </section>
+
+  <!-- ============================================= -->
+  <!-- КАРТИНКА 3 (папка Flexbox.Cards): "Services include" -->
+  <!-- 6 карточек с иконками, перенос строк (flex-wrap)  -->
+  <!-- ============================================= -->
+  <section class="services">
+    <h2>Services include</h2>
+    <p class="subtitle">
+      Nunc nonummy metus. Donec elit libero, sodales nec, volutpat a,
+      suscipit non, turpis.
+    </p>
+
+    <div class="card-row">
+      <div class="card">
+        <i data-lucide="bar-chart-3" class="card__icon"></i>
+        <h3>Search engine optimization</h3>
+        <p>Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi.</p>
+      </div>
+      <div class="card">
+        <i data-lucide="message-square-text" class="card__icon"></i>
+        <h3>Social media strategy</h3>
+        <p>Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi.</p>
+      </div>
+      <div class="card">
+        <i data-lucide="file-clock" class="card__icon"></i>
+        <h3>Real time and data</h3>
+        <p>Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi.</p>
+      </div>
+      <div class="card">
+        <i data-lucide="file-check-2" class="card__icon"></i>
+        <h3>Online media management</h3>
+        <p>Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi.</p>
+      </div>
+      <div class="card">
+        <i data-lucide="pie-chart" class="card__icon"></i>
+        <h3>Reporting &amp; analysis</h3>
+        <p>Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi.</p>
+      </div>
+      <div class="card">
+        <i data-lucide="file-symlink" class="card__icon"></i>
+        <h3>Penalty recovery</h3>
+        <p>Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================= -->
+  <!-- КАРТИНКА 4 (папка Flexbox.Cards): "What minimal helps you?" -->
+  <!-- 3 карточки в ряд, средняя — приподнята            -->
+  <!-- ============================================= -->
+  <section class="minimal">
+    <span class="eyebrow eyebrow--center">Minimal UI</span>
+    <h2>What minimal helps you?</h2>
+
+    <div class="card-row card-row--three">
+      <div class="mini-card">
+        <i data-lucide="spline" class="mini-card__icon" style="color:#d99a2b"></i>
+        <h3>Branding</h3>
+        <p>Consistent design makes it easy to brand your own.</p>
+      </div>
+      <div class="mini-card mini-card--highlight">
+        <i data-lucide="pen-tool" class="mini-card__icon" style="color:#1f9d6b"></i>
+        <h3>UI &amp; UX Design</h3>
+        <p>
+          The kit is built on the principles of the atomic design system.
+          It helps you to create projects fastest and easily customized
+          packages for your projects.
+        </p>
+      </div>
+      <div class="mini-card">
+        <i data-lucide="monitor" class="mini-card__icon" style="color:#2b8fd9"></i>
+        <h3>Development</h3>
+        <p>Easy to customize and extend, saving you time and money.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Подключаем библиотеку Lucide и «включаем» иконки -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
